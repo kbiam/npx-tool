@@ -10,14 +10,14 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // Use `true` for port 465, `false` for all other ports
   auth: {
-    user: process.env.USER,
-    pass: process.env.PASS,
+    user: "bangk1922@gmail.com",
+    pass: "zjnc vdhk jzre nitz",
   },
 });
 
 async function sendmail(mail,message){
   const mailOptions = {
-    from: process.env.USER,
+    from: "bangk1922@gmail.com",
     to: 'kushbang123@gmail.com',
     subject: "Message from npx",
     html: `${message} from ${mail}`
